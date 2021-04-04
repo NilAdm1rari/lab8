@@ -3,9 +3,9 @@
 use max\MyLog;
 use max\QuEquation;
 
-include "core/EquationInterface.php";
-include "core/LogAbstract.php";
-include "core/LogInterface.php";
+include "core/core/EquationInterface.php";
+include "core/core/LogAbstract.php";
+include "core/core/LogInterface.php";
 include "max/MyLog.php";
 include "max/Equation.php";
 include "max/QuEquation.php";
@@ -15,6 +15,7 @@ ini_set("display_errors", 1);
 error_reporting(-1);
 
 try {
+    MyLog::log("Версия программы: " . trim(file_get_contents('version')) );
     $b = new QuEquation();
     $values = array();
 
