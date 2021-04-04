@@ -15,7 +15,7 @@ Class MyLog extends LogAbstract implements LogInterface {
     /**
      * @param String $str строка для записи в массив лога
      */
-    public static function log(string $str){
+    public static function log(string $str):void{
         self::Instance()->_log($str);
 	}
     
@@ -32,7 +32,7 @@ Class MyLog extends LogAbstract implements LogInterface {
         
     }
     
-    public static function write(){
+    public static function write():void{
         self::Instance()->_write();
     }
 
