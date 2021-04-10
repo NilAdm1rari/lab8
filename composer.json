@@ -1,0 +1,28 @@
+{
+  "name": "niladmi/lab8",
+  "description": "lab10",
+  "type": "project",
+  "license": "-",
+  "authors": [
+    {
+      "name": "NilAdm1rari",
+      "email": "morroz.max@gmail.com"
+    }
+  ],
+
+  "minimum-stability": "dev",
+
+  "require": {
+    "niladm1rari/lab10df": "^2.0"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/rok9ru/trpo-core"
+    },
+	{
+      "type": "git",
+      "url": "https://github.com/NilAdm1rari/lab10df.git"
+    }
+	]
+}
