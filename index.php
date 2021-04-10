@@ -3,23 +3,19 @@
 use max\MyLog;
 use max\QuEquation;
 
-/*include "core/core/EquationInterface.php";
+include "core/core/EquationInterface.php";
 include "core/core/LogAbstract.php";
 include "core/core/LogInterface.php";
 include "max/MyLog.php";
 include "max/Equation.php";
 include "max/QuEquation.php";
-include "max/Exception.php";*/
-require_once __DIR__ . './vendor/autoload.php';
+include "max/Exception.php";
 
 ini_set("display_errors", 1);
 error_reporting(-1);
 
 try {
-	if(!is_dir("log")) {
-        mkdir("log", 0700);
-    }
-    //MyLog::log("Версия программы: " . trim(file_get_contents('version')) );
+    MyLog::log("Версия программы: " . trim(file_get_contents('version')) );
     $b = new QuEquation();
     $values = array();
 
